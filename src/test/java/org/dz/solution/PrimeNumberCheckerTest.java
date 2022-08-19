@@ -20,6 +20,27 @@ public class PrimeNumberCheckerTest {
     }
 
     @Test
+    public void check182() {
+        PrimeNumberChecker checker = new PrimeNumberChecker();
+        boolean result = checker.check(182);
+        Assert.assertFalse(result);
+    }
+
+    @Test
+    public void check21() {
+        PrimeNumberChecker checker = new PrimeNumberChecker();
+        boolean result = checker.check(21);
+        Assert.assertFalse(result);
+    }
+
+    @Test
+    public void check2() {
+        PrimeNumberChecker checker = new PrimeNumberChecker();
+        boolean result = checker.check(2);
+        Assert.assertTrue(result);
+    }
+
+    @Test
     public void check13() {
         PrimeNumberChecker checker = new PrimeNumberChecker();
         boolean result = checker.check(13);
